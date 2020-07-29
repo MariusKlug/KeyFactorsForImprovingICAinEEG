@@ -4,9 +4,13 @@
 
 ### Marius Klug, Klaus Gramann
 
-Corresponding author: Marius Klug, Biopsychology and Neuroergonomics, TU Berlin, Berlin, 10623, Germany marius.klug@tu-berlin.de
+Corresponding author: Marius Klug, Biopsychology and Neuroergonomics, TU Berlin, 10623, Berlin, Germany:
 
-This work was supported by the DFG (DFG-Project GR2627/8-1) and USAF (ONR 10024807).
+**Email:** marius.s.klug@gmail.com, marius.klug@tu-berlin.de
+
+**Researchgate:** https://www.researchgate.net/profile/Marius_Klug
+
+**Twitter:** https://twitter.com/marius_s_klug
 
 
 ### Abstract
@@ -19,7 +23,7 @@ Electroencephalogram (EEG), Artifact removal, Muscle artifacts, Blind source sep
 Provided with these scripts is a set of final extracted features to plot, but not the original dataset. The processing code can not be run without the original dataset but is provided for inspection. The plotting code can be run when the following additional packages are installed:
 
 * **EEGLAB:** https://sccn.ucsd.edu/eeglab/download.php
-* **Colormaps:** https://de.mathworks.com/matlabcentral/fileexchange/30564-othercolor
+* **Colormaps:** https://de.mathworks.com/matlabcentral/fileexchange/30564-othercolor, https://github.com/ZedThree/nemorb_matlab/blob/master/diverging_map.m
 * **HLine and VLine Helper:** https://de.mathworks.com/matlabcentral/fileexchange/1039-hline-and-vline
 * **Export figures:** https://de.mathworks.com/matlabcentral/fileexchange/23629-export_fig
 
