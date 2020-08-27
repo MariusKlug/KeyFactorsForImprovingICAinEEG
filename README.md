@@ -26,6 +26,6 @@ These scripts contain the complete processing from the raw EEG data files until 
 * **HLine and VLine Helper:** https://de.mathworks.com/matlabcentral/fileexchange/1039-hline-and-vline
 * **Export figures:** https://de.mathworks.com/matlabcentral/fileexchange/23629-export_fig
 
-
-
+# Releases
+* v1.0: [![DOI](https://zenodo.org/badge/283487746.svg)](https://zenodo.org/badge/latestdoi/283487746)
 
