@@ -1,4 +1,4 @@
-compute_AMICA_investigation_settings;
+
 matlab_instance = 10;
 
 % userpath('reset')
@@ -58,6 +58,8 @@ density_levels = [15 16 32 64 128 157];
 conditions = {'steamvr','joystick'};
 
 filter_freqs = [0 0.5:0.25:1.5 1.75:0.5:3.25 4.25] % for checking all
+
+compute_0_AMICA_investigation_settings;
 
 %% ICA loop
 
@@ -453,8 +455,8 @@ for loop_subject = subjects
 					'coord_transform',this_warping_transform ,...
 					'chansel',[1:EEG.nbchan] );
 				
-				EEG = pop_multifit(EEG, [1:size(EEG.icaweights,1)] ,'threshold',residualVariance_threshold,...
-					'dipoles', number_of_dipoles, 'rmout', do_remove_outside_head);
+				EEG = pop_multifit(EEG, [1:size(EEG.icaweights,1)] ,'threshold',100,...
+				'dipoles', 1, 'rmout', 'off');
 				
 				%% run iclabel, store in mat and save data
 				for i_classifier_version = 1:length(classifier_versions)

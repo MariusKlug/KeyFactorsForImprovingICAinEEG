@@ -5,7 +5,7 @@ subjects = [1:7 9:20];
 
 classifier_versions = {'default' 'lite'};
 
-i_classifier_version = 1; % change this to select default(1)/lite(2)!
+i_classifier_version = 2; % change this to select default(1)/lite(2)!
 
 classifier_version = classifier_versions{i_classifier_version};
 
@@ -122,6 +122,8 @@ end
 
 %%
 load(['plot_data\component_analysis_data_unfiltered_' classifier_version])
+all_rv = all_rv * 100;
+all_pattern_RV = all_pattern_RV * 100;
 
 %% plot settings
 channel_legends = {'16','32','64','128','157'};
@@ -277,7 +279,7 @@ for i_type = 1:length(plot_types)
 	xlabel(['High-pass filter cutoff [Hz]' ])
 	
 	grid on
-	title([plot_type_names{i_type} ' ICs mean RV'])
+	title([plot_type_names{i_type} ' ICs'])
 	
 	ylims = ylim;
 	ylim([0 ylims(2)]);
@@ -286,6 +288,7 @@ for i_type = 1:length(plot_types)
 	ax = gca;
 	ax.XRuler.MinorTickValues = filter_freqs_adjusted;
 	ax.XMinorGrid = 'on';
+	ylabel('Mean RV [%]')
 end
 
 l = legend(flipud([physlinehandles;joylinehandles]),fliplr({...
@@ -375,9 +378,9 @@ end
 [physlinehandles([5]).LineStyle] = deal('-.');
 
 xlabel(['High-pass filter cutoff [Hz]' newline ' '])
-
+ylabel ('Mean Residual Variance [%]')
 grid on
-title(['Residual Variance of Parietal Patterns'])
+title(['Parietal Patterns'])
 
 set(gca,'fontsize',12);
 

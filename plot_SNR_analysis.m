@@ -163,7 +163,7 @@ ERP_idx = find(x_times_original>=plot_start,1,'first'):find(x_times_original<plo
 x_times = x_times_original(ERP_idx);
 
 linestyle = '-';
-linewidth = 1.5;
+linewidth = 1;
 
 colors_density =  [0.2 linspace(0.7,0.0,5)
 	0.2 [linspace(0,0.5,2) 0.75 linspace(0.5,0,2)]
@@ -475,7 +475,7 @@ set(gca, 'Layer', 'top');
 clear handles
 for i = 1:size(ERPs,2)
 	
-	handles(i) = plot(x_times,squeeze(mean(squeeze(ERPs(:,i,classifier_version_to_plot,1,channel_layouts_to_use(4),ERP_idx))))','LineWidth', 1.5,...
+	handles(i) = plot(x_times,squeeze(mean(squeeze(ERPs(:,i,classifier_version_to_plot,1,channel_layouts_to_use(4),ERP_idx))))','LineWidth', linewidth,...
 		'color',colors_filters(i,:),'linestyle',linestyle);
 end
 
@@ -506,7 +506,7 @@ set(gca, 'Layer', 'top');
 clear handles
 for i = channel_layouts_to_use
 	
-	handles(i) = plot(x_times,squeeze(mean(squeeze(ERPs(:,6,classifier_version_to_plot,1,i,ERP_idx))))','LineWidth', 1.5,...
+	handles(i) = plot(x_times,squeeze(mean(squeeze(ERPs(:,6,classifier_version_to_plot,1,i,ERP_idx))))','LineWidth', linewidth,...
 		'color',colors_density(i,:),'linestyle',linestyle);
 end
 
@@ -539,7 +539,7 @@ set(gca, 'Layer', 'top');
 clear handles
 for i = channel_layouts_to_use
 	
-	handles(i) = plot(x_times,squeeze(mean(squeeze(ERPs(:,6,classifier_version_to_plot,1,i,ERP_idx))))','LineWidth', 1.5,...
+	handles(i) = plot(x_times,squeeze(mean(squeeze(ERPs(:,6,classifier_version_to_plot,1,i,ERP_idx))))','LineWidth', linewidth,...
 		'color',colors_density(i,:),'linestyle',linestyle);
 end
 
@@ -658,7 +658,6 @@ ERP_idx = find(x_times_original>=plot_start,1,'first'):find(x_times_original<plo
 x_times = x_times_original(ERP_idx);
 
 linestyle = '-';
-linewidth = 1.5;
 
 colors_density =  [0.2 linspace(0.7,0.0,5)
 	0.2 [linspace(0,0.5,2) 0.75 linspace(0.5,0,2)]
@@ -969,7 +968,7 @@ set(gca, 'Layer', 'top');
 clear handles
 for i = 1:size(ERPs,2)
 	
-	handles(i) = plot(x_times,squeeze(mean(squeeze(ERPs(:,i,classifier_version_to_plot,1,channel_layouts_to_use(4),ERP_idx))))','LineWidth', 1.5,...
+	handles(i) = plot(x_times,squeeze(mean(squeeze(ERPs(:,i,classifier_version_to_plot,1,channel_layouts_to_use(4),ERP_idx))))','LineWidth', linewidth,...
 		'color',colors_filters(i,:),'linestyle',linestyle);
 end
 
@@ -1000,7 +999,7 @@ set(gca, 'Layer', 'top');
 clear handles
 for i = channel_layouts_to_use
 	
-	handles(i) = plot(x_times,squeeze(mean(squeeze(ERPs(:,6,classifier_version_to_plot,1,i,ERP_idx))))','LineWidth', 1.5,...
+	handles(i) = plot(x_times,squeeze(mean(squeeze(ERPs(:,6,classifier_version_to_plot,1,i,ERP_idx))))','LineWidth', linewidth,...
 		'color',colors_density(i,:),'linestyle',linestyle);
 end
 
@@ -1033,7 +1032,7 @@ set(gca, 'Layer', 'top');
 clear handles
 for i = channel_layouts_to_use
 	
-	handles(i) = plot(x_times,squeeze(mean(squeeze(ERPs(:,6,classifier_version_to_plot,1,i,ERP_idx))))','LineWidth', 1.5,...
+	handles(i) = plot(x_times,squeeze(mean(squeeze(ERPs(:,6,classifier_version_to_plot,1,i,ERP_idx))))','LineWidth', linewidth,...
 		'color',colors_density(i,:),'linestyle',linestyle);
 end
 
@@ -1147,7 +1146,6 @@ ERP_idx = find(x_times_original>=plot_start,1,'first'):find(x_times_original<plo
 x_times = x_times_original(ERP_idx);
 
 linestyle = '-';
-linewidth = 1.5;
 
 signal_color = [0.85 0.85 0.85];
 noise_color = [0.7 0.7 0.7];
@@ -1434,7 +1432,7 @@ ax.YAxisLocation = 'origin';
 set(gca, 'Layer', 'top');
 clear handles
 for i = 1:size(ERPs,2)
-	handles(i) = plot(x_times,squeeze(mean(squeeze(ERPs(:,i,2,1,channel_layouts_to_use(4),ERP_idx))))','LineWidth', 1.5,...
+	handles(i) = plot(x_times,squeeze(mean(squeeze(ERPs(:,i,2,1,channel_layouts_to_use(4),ERP_idx))))','LineWidth', linewidth,...
 		'color',colors_filters(i,:),'linestyle',linestyle);
 end
 
@@ -1464,7 +1462,7 @@ set(gca, 'Layer', 'top');
 clear handles
 for i = channel_layouts_to_use
 	
-	handles(i) = plot(x_times,squeeze(mean(squeeze(ERPs(:,6,2,1,i,ERP_idx))))','LineWidth', 1.5,...
+	handles(i) = plot(x_times,squeeze(mean(squeeze(ERPs(:,6,2,1,i,ERP_idx))))','LineWidth', linewidth,...
 		'color',colors_density(i,:),'linestyle',linestyle);
 end
 
@@ -1495,7 +1493,7 @@ ax.YAxisLocation = 'origin';
 set(gca, 'Layer', 'top');
 clear handles
 for i = channel_layouts_to_use
-	handles(i) = plot(x_times,squeeze(mean(squeeze(ERPs(:,6,2,1,i,ERP_idx))))','LineWidth', 1.5,...
+	handles(i) = plot(x_times,squeeze(mean(squeeze(ERPs(:,6,2,1,i,ERP_idx))))','LineWidth', linewidth,...
 		'color',colors_density(i,:),'linestyle',linestyle);
 end
 

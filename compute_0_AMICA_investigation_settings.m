@@ -8,6 +8,73 @@
 max_threads = 4;
 num_models = 1;
 
+%%
+
+removed_chans = cell(length(subjects), 1);
+
+
+%%% filling in the manual steps
+% do this by manually do the cleaning (first check which channels have to be interpolated, then
+% once clean for just data segments, then clean again everything out that is an artifact), enter
+% 'eegh' in the console and the matrix that has been cleaned out into the matrix here
+
+% 1:
+removed_chans{1} =  [2    4    9   29   64   81  123  128  129  144  150];
+
+% 2:
+removed_chans{2} =  [65   70   83   95  125];
+
+% 3:
+removed_chans{3} =  [64   3   79   80  100  105  113   118  124  128  130  133  134  136  137  142  154];
+
+% 4:
+removed_chans{4} =  [15   66   77   95   97  120  132  151];
+
+% 5:
+removed_chans{5} =  [120];
+
+% 6:
+removed_chans{6} =  [23   29   31   68  97  98  99  100  103  120  124  125  127  128  129  130  134  137  138  141  145  150  151  152];
+
+% 7:
+removed_chans{7} =  [2    3    5   26   27   29   30   44   58   61   63   68   73   74   75   79   81   82   85   86   89   90   91   92   93   96  97  101  110  124  133  134  138  150  156];
+
+% 9:
+removed_chans{9} =  [24   43   59   65   66  100  125  129  136  151];
+
+% 10:
+removed_chans{10} =  [3    9   24   65   69   79   96  100  124  125  127  129  131  132  136  137  138  139];
+
+% 11:
+removed_chans{11} = [32   65   66   79   81   95   98   99  100  103  105  107  118  124  125  126  129  130  131  132  134  135  137  138  139  142  144  150];
+
+% 12:
+removed_chans{12} =  [5   81   83   95  108  123  125  126];
+
+% 13:
+removed_chans{13} =  [23   79   81   95  101  110  121  123  125  127  129  132  137  139  142  143];
+
+% 14:
+removed_chans{14} =  [61   70   71   95   97   98   99  100  101  102  105  124  126  129  130  131  132  133  137  138  139];
+
+% 15:
+removed_chans{15} =  [1   51   56   65   97   98  107  108  115  116  118  124  125  128  129  135  137  138  143  144  145  146  150  151  152];
+
+% 16:
+removed_chans{16} =  [2    9   23   26   29   30   32   45   81   99  105  123  124  125  126  127  128  129  133  136  137  138  141  146  154];
+
+% 17:
+removed_chans{17} =  [4   28   65   95   97  99  102  118  123  124  125  127  130  131  137  138  151  152];
+
+% 18:
+removed_chans{18} =  [79   97   98  99  101  102  116  117  121  122  123  126  127  128  130  131  132  133  134  136  137  138  139  140  141  142  143  145  146  147  148  152  153  154  155];
+
+% 19:
+removed_chans{19} =  [9   18   19   23   26  27   60   79   81   83  124  126  129  132  134  136];
+
+% 20:
+removed_chans{20} =  [35   36   60   61   66   79   80   95  107  123  128  132  157];
+
 %% manual rejection values
 rejections_segments = cell(length(subjects), 1);
 
