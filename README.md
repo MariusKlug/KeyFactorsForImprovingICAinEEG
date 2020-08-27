@@ -16,12 +16,11 @@ Corresponding author: Marius Klug, Biopsychology and Neuroergonomics, TU Berlin,
 ### Abstract
 Recent developments in EEG hardware and analyses approaches allow for recordings in both stationary and mobile settings. Irrespective of the experimental setting, EEG recordings are contaminated with noise that has to be removed before the data can be functionally interpreted. Independent component analysis (ICA) is a commonly used tool to remove artifacts such as eye movement, muscle activity, and external noise from the data and to analyze activity on the level of EEG effective brain sources. While the effectiveness of filtering the data as one key preprocessing step to improve the decomposition has been investigated previously, no study thus far compared the different requirements of mobile and stationary experiments regarding the preprocessing for ICA decomposition. We thus evaluated how movement in EEG experiments, the number of channels, and the high-pass filter cutoff during preprocessing influence the ICA decomposition. We found that for commonly used settings (stationary experiment, 64 channels, 0.5 Hz filter), the ICA results are acceptable. However, high-pass filters of up to 2 Hz cutoff frequency should be used in mobile experiments, and more channels require a higher filter to reach an optimal decomposition. Fewer brain ICs were found in mobile experiments, but cleaning the data with ICA proved to be important and functional even with low/density setups. Based on the results, we provide guidelines for different experimental settings that improve the ICA decomposition.
 
-### Keywords
-Electroencephalogram (EEG), Artifact removal, Muscle artifacts, Blind source separation (BSS), Independent component analysis (ICA), Filtering 
 
 # Usage
-Provided with these scripts is a set of final extracted features to plot, but not the original dataset. The processing code can not be run without the original dataset but is provided for inspection. The plotting code can be run when the following additional packages are installed:
+These scripts contain the complete processing from the raw EEG data files until the final figures. Provided with these scripts is a set of final extracted features to plot easily, but not the original dataset. The dataset can be downloaded at: http://dx.doi.org/10.14279/depositonce-10493. The code can be run when the following additional packages are installed:
 
+* **Bemobil-Pipeline:** https://github.com/MariusKlug/bemobil-pipeline
 * **EEGLAB:** https://sccn.ucsd.edu/eeglab/download.php
 * **Colormaps:** https://de.mathworks.com/matlabcentral/fileexchange/30564-othercolor, https://github.com/ZedThree/nemorb_matlab/blob/master/diverging_map.m
 * **HLine and VLine Helper:** https://de.mathworks.com/matlabcentral/fileexchange/1039-hline-and-vline
