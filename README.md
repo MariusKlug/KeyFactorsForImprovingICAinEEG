@@ -1,6 +1,6 @@
 # Identifying key factors for improving ICA-based decomposition of EEG data in mobile and stationary experiments 
 
-[https://www.biorxiv.org/content/10.1101/2020.06.02.129213v1](https://www.biorxiv.org/content/10.1101/2020.06.02.129213v1)
+[https://onlinelibrary.wiley.com/doi/10.1111/ejn.14992](https://onlinelibrary.wiley.com/doi/10.1111/ejn.14992)
 
 ### Marius Klug, Klaus Gramann
 
