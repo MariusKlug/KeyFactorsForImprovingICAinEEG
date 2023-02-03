@@ -18,7 +18,7 @@ Recent developments in EEG hardware and analyses approaches allow for recordings
 
 
 # Usage
-These scripts contain the complete processing from the raw EEG data files until the final figures. Provided with these scripts is a set of final extracted features to plot easily, but not the original dataset. The dataset can be downloaded at: http://dx.doi.org/10.14279/depositonce-10493. The code can be run when the following additional packages are installed:
+These scripts contain the complete processing from the raw EEG data files until the final figures. The order is to first run the "compute" parts, one after the other, and then the "analyze", and last the "plot" scripts. Provided with these scripts is a set of final extracted features to plot easily, but not the original dataset. The dataset can be downloaded at: http://dx.doi.org/10.14279/depositonce-10493. The code can be run when the following additional packages are installed:
 
 * **EEGLAB:** https://sccn.ucsd.edu/eeglab/download.php
 * **Bemobil-Pipeline:** https://github.com/MariusKlug/bemobil-pipeline
